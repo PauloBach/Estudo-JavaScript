@@ -1,0 +1,52 @@
+//EXERCÍCIO DA DISCIPLINA ALGORITMOS E PROGRAMAÇÃO I - SENAC
+//DESENVOLVIDO UTILIZANDO O REPLIT
+
+
+//USUÁRIO INSERE VALOR GASOLINA E ARMAZENA EM VARIÁVEL
+//USUÁRIO INSERE VALOR ALCOOL E ARMAZENA EM VARIÁVEL
+
+//COMPARAR SE O ALCOOL É MENOR QUE 70% DO VALOR DA GASOLINA
+    //PEGAR 70% DA GASOLINA
+    //PEGAR O QUE O USUÁRIO DIGITOU NO ÁLCOOL E COMPARAR COM O RESULTADO OBTIDO DOS 70% DA GASOLINA
+    //SE O RESULTADO FOR MENOR, IMPRIMIR: ÁLCOOL É MAIS VANTAJOSO
+    //SE O RESULTADO FOR IGUAL, IMPRIMIR: TANTO FAZ
+    //SE O RESULTADO FOR MAIOR, IMPRIMIR: A GASOLINA É MAIS VANTAJOSA
+
+//PERGUNTAR AO USUÁRIO SE DESEJA FAZER UMA NOVA SOLICITAÇÃO
+    //CASO SIM, PERGUNTAR OS VALORES NOVAMENTE
+    //CASO NÃO, ENCERRAR O PROGRAMA
+
+
+//VARIÁVEIS
+
+var gasolina, alcool, resposta;
+
+//CABEÇALHO
+
+console.log ("Aluno: Paulo Breidenbach Junior")
+console.log ("Exercício Calculadora de Combustível")
+console.log (" ")
+//REPETIÇÃO
+
+while (true) {
+    
+  gasolina = prompt ("Insira o valor da Gasolina");
+  alcool = prompt ("Insira o valor do ALcool");
+
+//CÁLCULO VANTAGEM
+  
+    if (alcool < 0.7 * gasolina) {
+    console.log ("O álcool é mais vantajoso.");
+  } else if (alcool == gasolina) {
+    console.log ("Tanto faz, ambos rendem igualmente.");
+  } else {
+    console.log ("A gasolina é mais vantajosa.");
+  }
+
+//PERGUNTA REPETIÇÃO
+  console.log (" ")
+  resposta = prompt ("Deseja consultar novamente? (S/N)")
+  if (resposta === "N") {
+    break
+  }
+}
